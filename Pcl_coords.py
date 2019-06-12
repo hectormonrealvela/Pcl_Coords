@@ -26,7 +26,7 @@ class MyDialog(HasTraits):
     points_picked = []
     count = 0
     point_cloud_number = 0
-    cont = 134
+    cont = 0
     cont2 = 0
 
     # The layout of the dialog created
