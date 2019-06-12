@@ -122,14 +122,14 @@ class MyDialog(HasTraits):
 
         print ("Actualmente se esta representando Cloud_yaw_frame_number_" + str(self.cont+1) +" y Cloud_yaw_frame_number_" + str(self.cont))
 
-        cloud_source = pcl.load('../clouds_test_v3/cloud_yaw_frame_number_' + str(self.cont+1) + '.pcd')
+        cloud_source = pcl.load('cloud_yaw_frame_number_' + str(self.cont+1) + '.pcd')
         points_array = cloud_source.to_array()
 
         self.points3d_draw = points3d(points_array[:, 0:1], points_array[:, 1:2], points_array[:, 2:3],
                                       points_array[:, 2:3], mode='sphere', scale_mode='none',
                                       scale_factor=self.scale_factor, reset_zoom=False, figure=self.scene2.mayavi_scene)
 
-        cloud_source = pcl.load('../clouds_test_v3/cloud_yaw_frame_number_' + str(self.cont) + '.pcd')
+        cloud_source = pcl.load('cloud_yaw_frame_number_' + str(self.cont) + '.pcd')
         points_array = cloud_source.to_array()
 
         self.points3d_draw = points3d(points_array[:,0], points_array[:,1], points_array[:,2],
@@ -143,7 +143,7 @@ class MyDialog(HasTraits):
 
         print ("Actualmente se esta representando Cloud_yaw_frame_number_" + str(self.cont+1) +" y Cloud_yaw_frame_number_" + str(self.cont))
 
-        cloud_source = pcl.load('../clouds_test_v3/cloud_yaw_frame_number_' + str(self.cont+1) + '.pcd')
+        cloud_source = pcl.load('cloud_yaw_frame_number_' + str(self.cont+1) + '.pcd')
         points_array = cloud_source.to_array()
 
         self.points3d_draw = points3d(points_array[:, 0:1], points_array[:, 1:2], points_array[:, 2:3],
@@ -151,7 +151,7 @@ class MyDialog(HasTraits):
                                           scale_factor=self.scale_factor, reset_zoom=False,
                                           figure=self.scene2.mayavi_scene)
 
-        cloud_source = pcl.load('../clouds_test_v3/cloud_yaw_frame_number_' + str(self.cont) + '.pcd')
+        cloud_source = pcl.load('cloud_yaw_frame_number_' + str(self.cont) + '.pcd')
         points_array = cloud_source.to_array()
 
         self.points3d_draw = points3d(points_array[:, 0], points_array[:, 1], points_array[:, 2],
